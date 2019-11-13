@@ -24,6 +24,7 @@ fetch(mainUrl)
     document.getElementById("avatar").innerHTML = fotoProfile;
     document.getElementById("myProfile").innerHTML = detailProfile;
   });
+
 // Fetch my Followers
 let url = "https://api.github.com/users/lighteagle/followers";
 fetch(url)
