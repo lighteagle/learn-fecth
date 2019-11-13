@@ -11,11 +11,11 @@ fetch(mainUrl)
     const detailProfile = `
     <h2>${myProfile.login}</h2>
     <br>
-    <p>${myProfile.name}</p>
-    <p>location : ${myProfile.location}</p>
-    <p>folowers (${myProfile.followers})</p>
-    <p>public repository  (${myProfile.public_repos})</p>
-    <p>join since: ${myProfile.created_at}</p>
+    <p><em>${myProfile.name}</em></p>
+    <p><em>location : ${myProfile.location}</em></p>
+    <p><em>folowers ( ${myProfile.followers} )</em></p>
+    <p><em>public repository  ( ${myProfile.public_repos} )</em></p>
+    <p><em>join since: ${myProfile.created_at}</em></p>
 
     
     
@@ -33,7 +33,7 @@ fetch(url)
     console.log(follower);
     document.getElementById(
       "myFollower-head"
-    ).innerText = `My GitHub Followers (${follower.length})`;
+    ).innerText = `My GitHub Followers ( ${follower.length} )`;
     follower.map(data => {
       const div = document.createElement("div");
       div.className = "item";
