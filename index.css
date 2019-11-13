@@ -40,11 +40,12 @@ header {
 
 
 .photo {
-  height: 100px;
+  height: 150px;
   box-shadow: black;
   transition: 0.5s;
   border-radius: 50%;
   border: 2px solid gray;
+  opacity: 0.5;
 }
 
 a {
@@ -57,7 +58,10 @@ h1 {
 }
 
 .photo:hover {
-  height: 125px;
+  opacity: 1;
+  /* height: 175px; */
+
+  border: 2px solid black;
 }
 
 #avatar img {
