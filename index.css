@@ -41,7 +41,7 @@ header {
 
 .photo {
   height: 150px;
-  box-shadow: black;
+  box-shadow: 2px 2px black;
   transition: 0.5s;
   border-radius: 50%;
   border: 2px solid gray;
