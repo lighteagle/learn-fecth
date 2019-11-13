@@ -6,7 +6,7 @@
 }
 
 header {
-  height: 400px;
+  height: 350px;
   background: #ccc
 }
 
@@ -23,15 +23,13 @@ header {
 }
 
 .item-2 {
-  flex: 1;
   width: 250px;
   margin: 10px;
 
 }
 
 .item-3 {
-  flex: 3;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   margin: 10px;
   font-size: 1.5rem;
 }
@@ -60,4 +58,9 @@ h1 {
 
 .photo:hover {
   height: 125px;
+}
+
+#avatar img {
+  border: solid 3px #666;
+  box-shadow: 0 0 5px black;
 }

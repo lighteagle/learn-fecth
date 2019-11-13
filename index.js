@@ -10,6 +10,7 @@ fetch(mainUrl)
     const fotoProfile = `<img src="${myProfile.avatar_url}" alt="myAvatar">`;
     const detailProfile = `
     <h2>${myProfile.login}</h2>
+    <br>
     <p>${myProfile.name}</p>
     <p>location : ${myProfile.location}</p>
     <p>folowers (${myProfile.followers})</p>
@@ -29,6 +30,9 @@ fetch(url)
   .then(response => response.json())
   .then(follower => {
     console.log(follower);
+    document.getElementById(
+      "myFollower-head"
+    ).innerText = `My GitHub Followers (${follower.length})`;
     follower.map(data => {
       const div = document.createElement("div");
       div.className = "item";
