@@ -15,7 +15,7 @@ fetch(mainUrl)
     <p><em>location : ${myProfile.location}</em></p>
     <p><em>folowers ( ${myProfile.followers} )</em></p>
     <p><em>public repository  ( ${myProfile.public_repos} )</em></p>
-    <p><em>join since: ${myProfile.created_at}</em></p>
+    <p><em>join since: ${myProfile.created_at.substring(0, 10)}</em></p>
 
     
     
